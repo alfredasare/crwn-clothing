@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a8c09695-8fd2-4024-939e-3b6e11856a2a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/collection-item/collection-item.component.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/collection-item/collection-item.style.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/collection-preview/collection-preview.component.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/collection-preview/collection-preview.styles.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/shop/shop.component.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/shop/shop.data.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/crown.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/header/header.component.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/header/header.styles.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
@@ -34,6 +31,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/assets" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -50,6 +48,9 @@
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\derekthe92\WebstormProjects\crwn-clothing\src\assets" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\alfred asare\WebstormProjects\crwn-clothing\src\pages\homepage" />
     </key>
@@ -83,7 +84,7 @@
       <workItem from="1580469249929" duration="1489000" />
       <workItem from="1580478701897" duration="309000" />
       <workItem from="1580479039279" duration="3124000" />
-      <workItem from="1580548740383" duration="6302000" />
+      <workItem from="1580548740383" duration="7817000" />
     </task>
     <servers />
   </component>
