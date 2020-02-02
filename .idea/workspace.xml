@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a8c09695-8fd2-4024-939e-3b6e11856a2a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/redux/root-reducer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/user/user.reducer.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/store.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/user/user.actions.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -52,7 +50,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="MTConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -94,6 +92,7 @@
       <workItem from="1580548740383" duration="27195000" />
       <workItem from="1580617722336" duration="8646000" />
       <workItem from="1580641252747" duration="4003000" />
+      <workItem from="1580660785862" duration="5129000" />
     </task>
     <servers />
   </component>
@@ -122,38 +121,38 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="363" y="90" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1366.728@0.0.1366.728" timestamp="1580478990293" />
-    <state width="1344" height="229" key="GridCell.Tab.0.bottom" timestamp="1580641969404">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1344" height="229" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1580641969404" />
-    <state width="1899" height="261" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1580594416246" />
-    <state width="1344" height="229" key="GridCell.Tab.0.center" timestamp="1580641969404">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1344" height="229" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1580641969404" />
-    <state width="1899" height="261" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1580594416246" />
-    <state width="1344" height="229" key="GridCell.Tab.0.left" timestamp="1580641969403">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1344" height="229" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1580641969403" />
-    <state width="1899" height="261" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1580594416246" />
-    <state width="1344" height="229" key="GridCell.Tab.0.right" timestamp="1580641969404">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1344" height="229" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1580641969404" />
-    <state width="1899" height="261" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1580594416246" />
-    <state x="922" y="163" key="SettingsEditor" timestamp="1580619643516">
+    <state width="936" height="258" key="GridCell.Tab.0.bottom" timestamp="1580666910869">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="922" y="163" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1580619643516" />
+    <state width="1344" height="229" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1580641969404" />
+    <state width="936" height="258" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1580666910869" />
+    <state width="936" height="258" key="GridCell.Tab.0.center" timestamp="1580666910869">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1344" height="229" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1580641969404" />
+    <state width="936" height="258" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1580666910869" />
+    <state width="936" height="258" key="GridCell.Tab.0.left" timestamp="1580666910869">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1344" height="229" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1580641969403" />
+    <state width="936" height="258" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1580666910869" />
+    <state width="936" height="258" key="GridCell.Tab.0.right" timestamp="1580666910869">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1344" height="229" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1580641969404" />
+    <state width="936" height="258" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1580666910869" />
+    <state x="922" y="163" key="SettingsEditor" timestamp="1580679349837">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="922" y="163" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1580679349837" />
     <state x="1061" y="45" width="758" height="957" key="find.popup" timestamp="1580562005949">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1061" y="45" width="758" height="957" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1580562005949" />
-    <state x="785" y="161" width="672" height="475" key="search.everywhere.popup" timestamp="1580656847987">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="1103" y="230" width="672" height="678" key="search.everywhere.popup" timestamp="1580677648900">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="785" y="161" width="672" height="475" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1580656847987" />
-    <state x="1103" y="230" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1580626085134" />
+    <state x="1103" y="230" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1580677648900" />
   </component>
 </project>
