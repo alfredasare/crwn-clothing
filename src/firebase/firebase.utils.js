@@ -31,7 +31,7 @@ export const createUserProfileDocument = async (userAuth, additionalData) => {
                 displayName,
                 email,
                 createdAt,
-                ...additionalData
+                ...additionalData   // Spread elements of additionalData object into userRef
             });
         } catch (e) {
             console.log('Error creating user', e.message);
