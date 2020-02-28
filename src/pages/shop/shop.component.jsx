@@ -1,8 +1,6 @@
 import React from "react";
 import { connect } from 'react-redux';
 import { Route } from 'react-router-dom';
-import {createStructuredSelector} from "reselect";
-import {selectCollections} from "../../redux/shop/shop.selectors";
 import CollectionsOverview from "../../components/collections-overview/collections-overview.component";
 import CollectionPage from "../collection/collection.component";
 import {convertCollectionSnapshotToMap, firestore} from "../../firebase/firebase.utils";
@@ -23,7 +21,7 @@ class ShopPage extends React.Component {
         const { updateCollections } = this.props;
         const collectionRef = firestore.collection('collections');
 
-        collectionRef.onSnapshot(async snapshot => {
+        collectionRef.get().then(snapshot => {
             const collectionsMap = convertCollectionSnapshotToMap(snapshot);
             updateCollections(collectionsMap);
             this.setState({
@@ -31,6 +29,7 @@ class ShopPage extends React.Component {
             });
         });
     }
+
 
     render() {
         const {match} = this.props;

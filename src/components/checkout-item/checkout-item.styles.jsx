@@ -27,7 +27,7 @@ export const TextContainer = styled.span`
 export const QuantityContainer = styled(TextContainer)`
     display: flex;
 
-    .div {
+    div {
       cursor: pointer;
     }
 
